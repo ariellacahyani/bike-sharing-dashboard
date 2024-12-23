@@ -7,8 +7,9 @@ import seaborn as sns
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 
 # Load Dataset
-df = pd.read_csv('https://raw.githubusercontent.com/ariellacahyani/bike-sharing-dashboard/refs/heads/main/day.csv')
-hour_df = pd.read_csv('https://raw.githubusercontent.com/ariellacahyani/bike-sharing-dashboard/refs/heads/main/hour.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/ariellacahyani/bike-sharing-dashboard/refs/heads/main/day_updated.csv')
+hour_df = pd.read_csv('https://raw.githubusercontent.com/ariellacahyani/bike-sharing-dashboard/refs/heads/main/hour_updated.csv')
+
 
 
 # Kolom nama musim
