@@ -112,6 +112,8 @@ Dashboard ini memberikan analisis interaktif berdasarkan data penyewaan sepeda.
 Gunakan filter di sidebar untuk menyesuaikan visualisasi sesuai kebutuhan Anda.
 """)
 
+# Menambahkan kolom 'season_corrected' ke hour_df
+hour_df['season_corrected'] = hour_df['season'].replace({1: 'Spring', 2: 'Summer', 3: 'Fall', 4: 'Winter'})
 
 # Filter Data Hourly
 filtered_hour_df = hour_df[(hour_df['season_corrected'].isin(selected_hour_season)) &
